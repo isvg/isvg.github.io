@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
-const dev = "production" === "development";
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
@@ -9,9 +9,6 @@ const config = {
 			fallback: null,
 			precompress: false
 		}),
-		paths: {
-			base: dev ? "" : "/isvg.github.io",
-		},
 		prerender: {
 			default: true
 		}
